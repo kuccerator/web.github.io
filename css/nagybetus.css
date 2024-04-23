@@ -1,0 +1,85 @@
+@import url('rolunk.css');
+@import url(program.css);
+@import url(tudas.css);
+@import url(kapcsolat.css);
+
+.bevezetoszoveg p{
+    font-size: 2em;
+}
+h1{
+    font-size: 3em;
+}
+h1:hover{
+    font-size: 3.1em;
+}
+.tablazat th, td, strong{
+    font-size: 1.7em;
+}
+.tablazat, #tablazat{
+    grid-template-columns: 55rem 33rem;
+}
+h2{
+    font-size: 2em
+}
+h2 b{
+    font-size: 1.2em;
+}
+#programok b{
+    font-size: 1.6em;
+}
+#programok time{
+    font-size: 1.3em;
+}
+#gyengenlato, footer, .szoveg, #checkbox, legend{
+    font-size: 2em;
+}
+#cim{
+    width: 20%;
+}
+#kozepgrid4{
+    width: 35rem;
+}
+#kozepgrid2 p{
+    font-size: 1em;
+}
+#csatlakozni p, #male, #female, .proba{
+    font-size: 2em;
+    margin-left: 10%;
+}
+#videoleiras{
+    margin-left: 10%;
+    font-size: 1.7em;
+}
+#nagybetu{
+    display: none;
+}
+#normalbetu{
+    display: block;
+}
+.bevezetoszoveg, #kepek, .tablazat td, .tablazat th, #kozepgrid, #videoleiras, .card, #kozep, #tablazat td, #tablazat th, #tablazat,
+#indulo, #kozepgrid2, #kozepgrid3, #kozepgrid4, #igeret, #cim{
+    background-color: white;
+}
+#miacserkeszet, #miacserkeszet2{
+    display: grid;
+    grid-template-columns: 85em;
+}
+.kep{
+    display: flex;
+    flex-direction: row !important; 
+    margin-left: 7rem;
+    margin-right: 0;
+}
+.semmi{
+    display: none;
+}
+#csapat{
+    margin-right: 2rem;
+}
+video{
+    margin-left: 16em !important;
+    width: 60em;
+}
+#videoleiras{
+    margin-left: 30%;
+}

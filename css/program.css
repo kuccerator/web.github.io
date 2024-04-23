@@ -1,0 +1,80 @@
+@import url('rolunk.css');
+
+#programok img{
+    width: auto; 
+    height: 13rem; 
+    overflow: hidden; 
+}
+#programok b:hover{
+    font-size: 1.4rem;
+    color: #1a3300;
+}
+.card{
+    background-color: #CBE1B1;
+    border: solid #356600;
+    width: 18rem;
+}
+#programok img:hover{
+    box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem #356600;
+}
+#kozep{
+    margin-top: 2%;
+    border: solid #356600;
+    border-radius: 0.75em;
+    background-color: #CBE1B1;
+    margin-bottom: 3%;
+    width: 15rem;
+}
+#progikepek{
+    margin-bottom: 3%;
+    width: 100%;
+}
+#progikepek2{
+    margin-bottom: 3%;
+    width: 100%;
+}
+@media screen and (max-width:1000px) {
+    .card{
+        margin-bottom: 4em;
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width:770px) {
+    .card{
+        margin-bottom: 3em;
+        display: flex;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+        height: auto;
+    }
+    #menu b{
+        font-size: 1.4rem;
+    }
+    #kozep{
+        margin-bottom: 3rem;
+    }
+}
+@media print{
+    #kozep{
+        border: 0;
+        border-radius: 0;
+        margin-top: 5em;
+    }
+    .card{
+        margin-bottom: 3em;
+        display: flex;
+        margin-left: 0;
+        width: 95%;
+        height: auto;
+    }
+    .col{
+        display: inline-block;
+        width: 40%; 
+    }
+    #progikepek{
+        margin-top: 6em;
+    }
+    .masikoldal{
+        margin-top: 6em;
+    }
+}

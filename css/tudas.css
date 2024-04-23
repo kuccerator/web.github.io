@@ -1,0 +1,249 @@
+@import url('rolunk.css');
+
+.szoveg, .szoveg p {
+    text-align: left;
+    font-size: 1.2rem;
+}
+.szoveg p:hover{
+    color: #1a3300;
+    border: 0;
+    font-weight: bold;
+}
+.bevezetoszoveg p{
+    margin-left: 1.2rem;
+}
+#tablazat td{
+    background-color: #CBE1B1;
+}
+#tablazat th{
+    background-color: #CBE1B1;
+}
+#tablazat p:hover{
+    color:#1a3300;
+}
+#tablazat{
+    margin-top: 1.875rem;
+    margin-bottom: 3.125rem;
+    border: solid #356600;
+    border-radius: 0.625rem;
+    background-color: #CBE1B1;
+    width: 31.25rem;
+    box-shadow: 0.312rem 0.312rem 0.62rem 0.312rem #1a3300;
+}
+#tablazat strong{
+    font-size: 1.5rem; 
+    margin-top: 1.25rem; 
+    margin-left: 1.25rem;   
+}
+a{
+    color:black; 
+
+}
+#indulo{
+    box-shadow: 0.312rem 0.312rem 0.625rem 0.312rem #1a3300;
+    margin-top: 2% !important;
+    border: solid #356600;
+    border-radius: 0.75em;
+    background-color: #CBE1B1;
+    width: 78.125rem;
+}
+#kozepgrid{
+    width: 18.75rem;
+}
+#kozepgrid2{
+    margin-top: 2%;
+    border: solid #356600;
+    border-radius: 0.75em;
+    background-color: #CBE1B1;
+    width: 78rem;
+    box-shadow: 0.312rem 0.312rem 0.625rem 0.312rem #1a3300;
+}
+#kozepgrid3{
+    margin-top: 5%;
+    border: solid #356600;
+    border-radius: 0.75em;
+    background-color: #CBE1B1;
+    width: 28.125rem;
+}
+#kozepgrid4{
+    margin-top: 2%;
+    border: solid #356600;
+    border-radius: 0.75em;
+    background-color: #CBE1B1;
+    width: 25rem;
+}
+#fogadalom{
+    display: grid;
+    grid-template-columns: 50rem 43.75rem;
+}
+#igeret{
+    margin-top: 1.875rem;
+    margin-right: 1rem;
+    border: solid #356600; 
+    border-radius: 0.75em; 
+    background-color: #CBE1B1;
+}
+#kepek{
+    margin-left: 2%;
+    margin-top: 1.875rem;
+    margin-right: 6.5rem; 
+    background-color: #CBE1B1; 
+    border-radius: 0.75em; 
+    border: solid #356600; 
+    display: flex; 
+    justify-content: center;
+}
+.bevezetoszoveg img{
+    border-radius: 0.75em; 
+    border: solid #356600
+}
+#cim{
+    margin-top: 2%;
+    border: solid #356600;
+    border-radius: 0.75em;
+    background-color: #CBE1B1;
+    width: 20%;
+}
+h2:hover{
+    color: #1a3300;
+    font-size: 2.6em;
+    border: 0;
+}
+article{
+    text-align: left;
+}
+article:hover{
+    color: #1a3300;
+    border: 0;
+    font-weight: bold;
+}
+@media screen and (max-width:1000px) {
+    #cim{
+        width: 40%;
+    }
+    #fogadalom{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #kepek{
+        margin-left: 13rem;
+        margin-top: 0;
+        margin-right: 13rem; 
+    }
+    img{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    #igeret{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+@media screen and (max-width:770px) {
+    #cim{
+        width: 50%;
+    }
+    h1:hover{
+        font-size: 1.9rem;
+    }
+    #kozepgrid2{
+        width: 90%;
+    }
+    #kozepgrid3{
+        width: 24rem;
+    }
+    #fogadalom{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #kepek{
+        margin-left: 1.5rem;
+        margin-top: 0;
+        margin-right: 1.5rem; 
+    }
+    #indulo{
+        width: 90%;
+    }
+    #tabl{
+        font-size: 1.2rem;
+    }
+    #tablazat{
+        width: 90%;
+    }
+}
+@media print{
+    #cim{
+        border: 0;
+        border-radius: 0;
+        margin-left: 2%;
+        margin-top: 4em;
+        margin-bottom: 0 !important;
+    }
+    #kozepgrid, #kozepgrid3, #kozepgrid4{
+        font-size: 1.4em;
+    }
+    .szoveg{
+        font-size: 1.3em;
+        text-align: justify;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    #kozepgrid2, #kozepgrid4, #kepek{
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0 !important;
+        display: inline;
+    }
+     #igeret{
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0 !important;
+        float: none;
+    }
+    #kozepgrid3{
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0 !important;
+        margin-left: 6em !important;
+    }
+    #fogadalom{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #kepek{
+        justify-content: right;
+        margin-left: 5em !important;
+    }
+    h1, h2{
+        margin: 0 !important;
+    }
+    #indulo{
+        box-shadow: none;
+        margin: 0 auto !important;
+        border: 0;
+        border-radius: 0;
+        font-size: 0.75em;
+        float: none;
+        width: 100% !important;
+    }
+    #tablazat{
+        border: solid black;
+        border-width: 1px;
+        border-radius: 0;
+        width: 31.25rem;
+        box-shadow: none;
+    }
+    #kozepgrid{
+        margin-top: 0;
+    }
+    article{
+        margin: 0 !important;
+        box-shadow: none !important;
+    }
+    article, #tabl{
+        width: 100%;
+    }
+}
