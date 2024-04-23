@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/program.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
+    <script src="scripts/styleswitcher.js"></script>
+    <link rel="icon" width="80" type="image/png" href="ikon.jpg">
+    <title>Csapatprogramok (196. számú Damjanich János Cserkészcsapat)</title>
+</head>
+<body>
+    <nav id="tartalomraugras" class="visually-hidden-focusable">
+        <a href="#tartalom">Ugrás a tartalomra</a>
+    </nav>
+    <header>
+      <div class="teteje">
+          <div>
+              <img src="mcssz.jpg" alt="Kép a Magyar Cserkészszövetség logójáról." id="logo">
+          </div>
+          <div id="menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html"><b>Rólunk</b></a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="current" class="nav-link active" aria-current="page" href="#"><b><i>Csapatprogramok</i></b></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tudas.html"><b>Cserkésztudás</b></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="kapcsolat.html"><b>Kapcsolat</b></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+      </div>
+      <div class="horizontal-line"></div>
+      <nav id="gyengenlato">
+        <a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span>Nagybetűs változat</a>
+        <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="ikon"></span>Normál változat</a>
+      </nav> 
+  </header>
+    <main id="tartalom"> 
+        <div class="container text-center" id="kozep">
+            <div class="row">
+                <div class="col">
+                    <h1><b>2023-24</b></h1>
+                </div>
+            </div>
+        </div>
+        <div id="programok">
+            <figure><div class="container text-center" id="progikepek">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <div class="card">
+                      <img src="program/túra.jpg" class="card-img-top" alt="Csoportkép első kamerával sétálás közben a februári túrán.">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Túra</b></h5>
+                        <p class="card-text"><time datetime="2024-02-17">2024.02.17</time></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="program/szomics.JPG" class="card-img-top" alt="Fénykép a 2023-as Szolnoki Mikuláscsatáról. A cserkészház előtt a vikingek éppen kiszabadítják a Mikulást a sárkányok kezei közül.">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Szolnoki Mikuláscsata</b></h5>
+                        <p class="card-text"><time datetime="2024-12-02">2024.12.02</time><time datetime="2024-12-03">-03</time></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="program/túra2.jpg" class="card-img-top" alt="Négy gyerek, ahogyan egy játszótéren fejjel lefelé lógnak egy rúdról a novemberi túrán.">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Túra</b></h5>
+                        <p class="card-text"><time datetime="2024-11-12">2024.11.12</time></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="program/szolnoknapja.jpeg" class="card-img-top" alt="Sörpadok és sátrak Szolnok Napján, a jobb sarokban egy cserkésszel.">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Szolnok Napja</b></h5>
+                        <p class="card-text"><time datetime="2024-09-02">2024.09.02</time></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </figure>
+            <figure>
+              <div class="container text-center" id="progikepek2">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <div class="card masikoldal">
+                      <img src="program/csapattábor.jpg" class="card-img-top" alt="Fénykép a 2023-as csapattábor avatásáról. A kiscserkészek megkapják a kék-sárga nyakkendőjüket a képen a csapatparancsnoktól.">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Csapattábor</b></h5>
+                        <p class="card-text"><time datetime="2024-07-18">2024.07.18</time><time datetime="2024-07-28">-28</time></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card masikoldal">
+                      <img src="program/majalis.JPG" class="card-img-top" alt="Csoportkép a majálison jelenlévő egyenruhás cserkészekről a szolnoki Belvárosi Templom előtt.">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Pünkösdi majális</b></h5>
+                        <p class="card-text"><time datetime="2024-05-29">2024.05.29</time></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="program/szentorban.JPG" class="card-img-top" alt="Fénykép ahogyan a lelkinapon a cserkészek a földön ülve egy körben a gyerekekkel népdalokat énekelnek.">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Szent Orbán Lelkinapok</b></h5>
+                        <p class="card-text"><time datetime="2024-05-20">2024.05.20</time><time datetime="2024-05-21">-21</time></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="program/portya.JPG" class="card-img-top" alt="Fénykép a cserkészekről, ahogyan a Kulacsfogó nevű játékot játszák.">
+                      <div class="card-body">
+                        <h5 class="card-title"><b>Portya</b></h5>
+                        <p class="card-text"><time datetime="2024-04-21">2024.04.21</time><time datetime="2024-04-23">-23</time></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </figure>
+            </div>
+      <nav id="ugras">
+        <a href="#menu"><h3>Ugrás a tetejére</h3></a>
+      </nav>
+    </main>
+    <footer class="text-center">
+      <div class="row">
+          <div class="col-12">
+              <address>
+                  <p>Készítette: Baráth Réka <br>(<a
+                          href="mailto:od6o6w@inf.elte.hu">od6o6w@inf.elte.hu</a>)<br>
+                          <a href="https://196cserkesz.hu/" target="_blank">Forrás itt található.</a></p>
+              </address>
+          </div>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/styleswitch.js"></script>
+</body>
+</html>
