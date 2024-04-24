@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/kapcsolat.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
+    <script src="scripts/styleswitcher.js"></script>
+    <link rel="icon" width="80" type="image/png" href="ikon.jpg">
+    <title>Kapcsolat (196. számú Damjanich János Cserkészcsapat)</title>
+</head>
+<body>
+    <nav id="tartalomraugras" class="visually-hidden-focusable">
+        <a href="#tartalom">Ugrás a tartalomra</a>
+    </nav>
+    <header>
+        <div class="teteje">
+            <div>
+                <img src="mcssz.jpg" alt="Kép a Magyar Cserkészszövetség logójáról." id="logo">
+            </div>
+            <div id="menu">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html"><b>Rólunk</b></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="program.html"><b>Csapatprogramok</b></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="tudas.html"><b>Cserkésztudás</b></a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="current" class="nav-link active" aria-current="page" href="#"><b><i>Kapcsolat</i></b></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <nav id="gyengenlato">
+            <a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span>Nagybetűs változat</a>
+            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="ikon"></span>Normál változat</a>
+        </nav>
+    </header>
+    <main id="tartalom">
+        <section>
+        <div class="container text-center" id="kozepgrid">
+            <div class="row">
+                <div class="col">
+                    <h1><b>Cserkész szeretnék lenni!</b></h1>
+                </div>
+            </div>
+        </div>
+            <div class="container text-center" id="kozepgrid2">
+                <div class="row" id="doboz">
+                    <div class="col" id="csatlakozni">
+                        <p><b>Mikor tudok csatlakozni?</b></p>
+                        <p>
+                            A toborzás szeptember/október környékén szokott zajlani.
+                        </p>
+                        <p><b>Mi történik, ha jelentkezem?</b></p>
+                        <p>
+                            Ha jelentkezel, a korosztályodnak megfelelő 6-8 fős Őrshöz csatlakozhatsz, és az őrsvezetőd vezetésével heti rendszerességű. kb. másfél órás őrsgyüléseken vehetsz részt.
+                        </p>
+                        <p><b>Pénzbe kerül, hogy cserkész legyek?</b></p>
+                        <p>
+                            A cserkészet egy önkéntes mozgalom, ami azt jelenti, hogy a vezetők nem kérnek pénzt a programok megszervezéséért. A programon való részvétel természetesen pénzbe kerül, de ezt az utazásra, étkezésre és az anyagköltségre fordítjuk.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container text-center" id="kozepgrid3">
+            <form action="mailto:od6o6w@inf.elte.hu" method="post" enctype="text/plain">
+                <p></p>
+                <fieldset>
+                    <legend><b><i>Vedd fel velünk a kapcsolatot!</i></b></legend>
+                    <label for="nev"><strong>Név*</strong></label><br>
+                    <input required type="text" name="gyereknev" id="nev" size="80" maxlength="80"><br>
+                    <label for="szulo"><strong>Szülő neve (kiskorú esetén)</strong></label><br>
+                    <input type="text" name="szulonev" id="szulo" size="80" maxlength="80"><br>
+                    <label for="szam"><strong>Telefonszám*</strong></label><br>
+                    <input type="tel" name="telefonszam" id="szam" size="80" pattern="[0-9]{2}/[0-9]{3}-[0-9]{4}" placeholder="Pl.: 20/123-4567" required><br>
+                    <br><p><strong>Nem*</strong></p>
+                    <input type="radio" name="nem" id="n" value="Nő" required><label for="n" id="female">Nő&nbsp;&nbsp;&nbsp;</label>
+                    <input type="radio" name="nem" id="f" value="Férfi" required><label for="f" id="male">Férfi</label><br><br>
+                    <label for="uzenet"><strong>Üzenet (opcionális):</strong></label><br>
+                    <textarea name="szoveg" id="uzenet" cols="80" rows="10" placeholder="Ide írd le, ha van valami mondandód nekünk!" maxlength="800"></textarea><br>
+                    <br><label for="kor"><strong>Kor*</strong></label>
+                    <input type="range" id="kor" name="szam" min="6" max="30" oninput="updateValue(this.value)">
+                        <span id="sliderValue">12</span>
+
+                        <script>
+                            function updateValue(val) {
+                                document.getElementById('sliderValue').textContent = val;
+                            }
+                        </script>
+                </fieldset>
+                <fieldset id="checkbox">
+                    <br><input type="checkbox" name="nemjel" id="nemjel" value="Igen" required>
+                    <label for="nemjel">&nbsp;Elfogadom, hogy ennek a formnak a kitöltése nem egyelő a jelentkezéssel.*</label>
+                    <div>
+                    <br><input type="checkbox" name="kapcs" id="kapcs" value="Igen" required>
+                    <label for="kapcs">&nbsp;Elfogadom, hogy ez csupán az érdeklődés kifejezésének felel meg,<br> egy vezető veszi majd fel velem a kapcsolatot.*</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <br><p id="kuldes"><strong><i>Adatok elküldése:</i></strong></p>
+                    <input type="submit" value="Beküld">
+                    <input type="reset" value="Törlés">
+                </fieldset>
+                <p></p>
+            </form>
+        </div>
+    <nav id="ugras">
+        <a href="#menu"><h3>Ugrás a tetejére</h3></a>
+    </nav>
+    </main>
+    <footer class="text-center">
+        <div class="row">
+            <div class="col-12">
+                <address>
+                    <p>Készítette: Baráth Réka <br>(<a
+                            href="mailto:od6o6w@inf.elte.hu">od6o6w@inf.elte.hu</a>)<br>
+                            <a href="https://196cserkesz.hu/" target="_blank">Forrás itt található.</a></p>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="js/styleswitch.js"></script>    
+</body>
+</html>
